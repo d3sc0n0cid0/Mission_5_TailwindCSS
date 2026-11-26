@@ -1,1 +1,24 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+
+/*Colores*/
+    --color-kirby-pink: #ff85b3;
+    --color-kirby-pink-dark: #e05288;
+    --color-kirby-cream: #fff9f2;
+    --color-kirby-star: #ffd166;
+    /*Modo oscuro*/
+    --color-dream-bg: #1a1423;
+    --color-dream-surface: #261e35;
+    --color-dream-text: #f8f0fb;
+
+/*Tipografía*/
+    --font-display: "Poppins", sans-serif;
+
+}
+
+/*Imágenes*/
+.bg-header-kirby {
+    background-image: url('./assets/img/kirbyfondo.jpg');
+}
