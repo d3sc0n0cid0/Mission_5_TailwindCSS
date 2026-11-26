@@ -4,13 +4,13 @@
 @theme {
 
 /*Colores*/
-    --color-kirby-pink: #ff85b3;
-    --color-kirby-pink-dark: #e05288;
-    --color-kirby-cream: #fff9f2;
-    --color-kirby-star: #ffd166;
+    --color-pink: #ff85b3;
+    --color-pink-dark: #e05288;
+    --color-cream: #fff9f2;
+    --color-star: #ffd166;
+    --color-cocoa: #3d2c2e;
     /*Modo oscuro*/
     --color-dream-bg: #1a1423;
-    --color-dream-surface: #261e35;
     --color-dream-text: #f8f0fb;
 
 /*Tipografía*/
@@ -21,4 +21,7 @@
 /*Imágenes*/
 .bg-header-kirby {
     background-image: url('./assets/img/kirbyfondo.jpg');
+}
+.bg-stripePink{
+    background-image: url('./assets/img/stripePink.jpg');
 }
