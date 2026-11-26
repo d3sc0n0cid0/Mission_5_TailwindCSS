@@ -1,5 +1,6 @@
 import './App.css'
-
+//Imagenes:
+import burgerImg from './assets/img/Kirby_Cafe_Summer_Kirby_hamburger_&_Lemon_cream_pasta.jpg'
 function App() {
 
   function toggleTema() {
@@ -42,13 +43,30 @@ function App() {
       <main className="bg-stripePink bg-cream/10 dark:bg-dream-bg/30 bg-blend-overlay min-h-screen 
             bg-size-[100%_100%] bg-center bg-no-repeat p-6 md:p-12">        
 
-        <section className="relative z-10 p-6 md:p-12">
-          <p>Cosas</p>
+        <section className="relative p-6 md:p-12">
+          <h1 className="text-3xl font-bold text-center p-10 ">
+            PLATOS POPULARES
+          </h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-fils-3 gap-4 ">
+              <div className="bg-cream/75 dark:bg-dream-bg/80 p-5 rounded-lg">
+                <h1 className="font-bold text-left p-2 text-pink dark: text-pink-dark">
+                  Summer Kirby Burger & Lemon Cream Pasta
+                </h1>
+                <div flex flex-col sm:flex-row items-center gap-4 >
+                  <p className=" text-cocoa dark:text-cream " >
+                   The familiar Kirby burger is ready for summer too!
+                    A stylish, juicy burger topped off with sunglasses, served with refreshing lemon and rich gorgonzola pasta. This is a dish that lets you enjoy summer in Dream Land.</p>
+                  <img className="block mx-auto" src={burgerImg}/>
+                </div>
+              </div>
+          </div>
         </section>
       </main>
 {/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
-      <footer>
-
+      <footer className="bg-cocoa">
+        <div className="min-h-[100px]">
+          <p>Pipipipipi</p>
+        </div>
       </footer>
     </>
   )
