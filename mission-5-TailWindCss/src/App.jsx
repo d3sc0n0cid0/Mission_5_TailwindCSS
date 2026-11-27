@@ -3,6 +3,7 @@ import './App.css'
 import burgerImg from './assets/img/Kirby_Cafe_Summer_Kirby_hamburger_&_Lemon_cream_pasta.jpg'
 import burgerImg2 from './assets/img/Kirby_Cafe_Waddle_Dee_Hamburger_and_Meat_Sauce_Pasta_with_steamed_vegetables_2021.jpg'
 import curry from './assets/img/Kirby_Cafe_Popstar_Curry_Tailored_with_Plenty_of_Seafood.jpg'
+import feast from './assets/img/Kirby_Cafe_Whispy_Woods_Feast_plate.jpg'
 function App() {
 
   function toggleTema() {
@@ -10,8 +11,8 @@ function App() {
   }
 
   return (
-    <>
-      <nav className="
+    <div className="animate-float-in">
+      <nav className=" 
             flex items-center justify-between p-4 border-2  bg-pink shadow 
             dark:bg-pink-dark dark:text-cream dark:border-cocoa" 
             >
@@ -50,7 +51,7 @@ function App() {
             PLATOS POPULARES
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-fils-3 gap-4 ">
-              <div className="bg-cream/75 dark:bg-dream-bg/80 p-5 rounded-lg">
+              <div className="bg-cream/75 dark:bg-dream-bg/80 p-5 rounded-lg hover:scale-102 border-star hover:border-2">
                 <h1 className="font-bold text-left p-2 text-pink dark: text-pink-dark">
                   Summer Kirby Burger & Lemon Cream Pasta
                 </h1>
@@ -62,7 +63,7 @@ function App() {
                 </div>
               </div>
 
-              <div className="bg-cream/75 dark:bg-dream-bg/80 p-5 rounded-lg">
+              <div className="bg-cream/75 dark:bg-dream-bg/80 p-5 rounded-lg hover:scale-102  border-star hover:border-2">
                 <h1 className="font-bold text-left p-2 text-pink dark: text-pink-dark">
                   Waddle Dee Hamburger & Meat Sauce Pasta with steamed vegetables
                 </h1>
@@ -73,7 +74,7 @@ function App() {
                 </div>
               </div>
 
-              <div className="bg-cream/75 dark:bg-dream-bg/80 p-5 rounded-lg">
+              <div className="bg-cream/75 dark:bg-dream-bg/80 p-5 rounded-lg hover:scale-102  border-star hover:border-2">
                 <h1 className="font-bold text-left p-2 text-pink dark: text-pink-dark">
                   Popstar Curry Tailored with Plenty of Seafood
                 </h1>
@@ -84,16 +85,29 @@ function App() {
                   <img className="block mx-auto" src={curry}/>
                 </div>
               </div>
+
+              <div className="bg-cream/75 dark:bg-dream-bg/80 p-5 rounded-lg hover:scale-102  border-star hover:border-2">
+                <h1 className="font-bold text-left p-2 text-pink dark: text-pink-dark">
+                  Whispy Woods' Energetic Feast Plate
+                </h1>
+                <div flex flex-col sm:flex-row items-center gap-4 >
+                  <p className=" text-cocoa dark:text-cream " >
+                    This plate is a hearty feast.
+                    (Creamy spinach pasta, chicken teriyaki with apple ginger sauce, pilaf, potato salad, and a petit dessert.)
+                  </p>
+                  <img className="block mx-auto" src={feast} />
+                </div>
+              </div>
           </div>
         </section>
       </main>
 {/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
       <footer className="bg-cocoa">
         <div className="min-h-[100px]">
-          <p>Pipipipipi</p>
+          <p>Trabajo hecho con amor y cariño :0)</p>
         </div>
       </footer>
-    </>
+    </div>
   )
 }
 
