@@ -1,6 +1,7 @@
 import './App.css'
 //Imagenes:
 import burgerImg from './assets/img/Kirby_Cafe_Summer_Kirby_hamburger_&_Lemon_cream_pasta.jpg'
+import burgerImg2 from './assets/img/Kirby_Cafe_Waddle_Dee_Hamburger_and_Meat_Sauce_Pasta_with_steamed_vegetables_2021.jpg'
 function App() {
 
   function toggleTema() {
@@ -43,7 +44,7 @@ function App() {
       <main className="bg-stripePink bg-cream/10 dark:bg-dream-bg/30 bg-blend-overlay min-h-screen 
             bg-size-[100%_100%] bg-center bg-no-repeat p-6 md:p-12">        
 
-        <section className="relative p-6 md:p-12">
+        <section className="relative">
           <h1 className="text-3xl font-bold text-center p-10 ">
             PLATOS POPULARES
           </h1>
@@ -57,6 +58,17 @@ function App() {
                    The familiar Kirby burger is ready for summer too!
                     A stylish, juicy burger topped off with sunglasses, served with refreshing lemon and rich gorgonzola pasta. This is a dish that lets you enjoy summer in Dream Land.</p>
                   <img className="block mx-auto" src={burgerImg}/>
+                </div>
+              </div>
+
+               <div className="bg-cream/75 dark:bg-dream-bg/80 p-5 rounded-lg">
+                <h1 className="font-bold text-left p-2 text-pink dark: text-pink-dark">
+                  Waddle Dee Hamburger & Meat Sauce Pasta with steamed vegetables
+                </h1>
+                <div flex flex-col sm:flex-row items-center gap-4 >
+                  <p className=" text-cocoa dark:text-cream " >
+                   The hardworking Waddle Dees have finally appeared as a Kirby Café burger! This is a healthy dish that's easy on the stomach, made with soy meat and avocado.</p>
+                  <img className="block mx-auto" src={burgerImg2}/>
                 </div>
               </div>
           </div>
