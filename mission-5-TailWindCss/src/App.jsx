@@ -2,6 +2,7 @@ import './App.css'
 //Imagenes:
 import burgerImg from './assets/img/Kirby_Cafe_Summer_Kirby_hamburger_&_Lemon_cream_pasta.jpg'
 import burgerImg2 from './assets/img/Kirby_Cafe_Waddle_Dee_Hamburger_and_Meat_Sauce_Pasta_with_steamed_vegetables_2021.jpg'
+import curry from './assets/img/Kirby_Cafe_Popstar_Curry_Tailored_with_Plenty_of_Seafood.jpg'
 function App() {
 
   function toggleTema() {
@@ -61,7 +62,7 @@ function App() {
                 </div>
               </div>
 
-               <div className="bg-cream/75 dark:bg-dream-bg/80 p-5 rounded-lg">
+              <div className="bg-cream/75 dark:bg-dream-bg/80 p-5 rounded-lg">
                 <h1 className="font-bold text-left p-2 text-pink dark: text-pink-dark">
                   Waddle Dee Hamburger & Meat Sauce Pasta with steamed vegetables
                 </h1>
@@ -69,6 +70,18 @@ function App() {
                   <p className=" text-cocoa dark:text-cream " >
                    The hardworking Waddle Dees have finally appeared as a Kirby Café burger! This is a healthy dish that's easy on the stomach, made with soy meat and avocado.</p>
                   <img className="block mx-auto" src={burgerImg2}/>
+                </div>
+              </div>
+
+              <div className="bg-cream/75 dark:bg-dream-bg/80 p-5 rounded-lg">
+                <h1 className="font-bold text-left p-2 text-pink dark: text-pink-dark">
+                  Popstar Curry Tailored with Plenty of Seafood
+                </h1>
+                <div flex flex-col sm:flex-row items-center gap-4 >
+                  <p className=" text-cocoa dark:text-cream " >
+                    This squid-ink seafood curry is perfect for summer. Turmeric rice and rice flour are used to portray Popstar with two "rings".                  
+                  </p>
+                  <img className="block mx-auto" src={curry}/>
                 </div>
               </div>
           </div>
