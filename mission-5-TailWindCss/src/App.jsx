@@ -18,10 +18,10 @@ function App() {
       localStorage.setItem('tema', esOscuro ? 'dark' : 'light')
     }
   return (
-    <div>
+    <div className='max-w-10xl mx-auto'>
       <nav className="flex flex-wrap items-center justify-between p-4 border-b-2 border-cocoa/20 bg-pink shadow dark:bg-pink-dark dark:text-cream dark:border-cocoa">
         <span className="text-xl font-bold"> ★ Kirby caffe ★</span>
-        <ul className="flex gap-6">
+        <ul className="flex gap-6 flex-wrap">
           <li>
             <a href="#" className="hover:text-cream italic dark:hover:text-star">Teléfono: 699 XX XX XX</a>
           </li>
@@ -78,7 +78,7 @@ function App() {
               </div>
 
               <div className="bg-cream/75 dark:bg-dream-bg/80 p-5 rounded-lg hover:scale-102  border-star hover:border-2">
-                <h3 className="font-bold text-left p-2 text-pink dark: text-pink-dark">
+                <h3 className="font-bold text-left p-2 text-pink dark:text-pink-dark">
                   Popstar Curry Tailored with Plenty of Seafood
                 </h3>
                 <div className="flex flex-col sm:flex-row items-center gap-4" >
@@ -90,7 +90,7 @@ function App() {
               </div>
 
               <div className="bg-cream/75 dark:bg-dream-bg/80 p-5 rounded-lg hover:scale-102  border-star hover:border-2">
-                <h3 className="font-bold text-left p-2 text-pink dark: text-pink-dark">
+                <h3 className="font-bold text-left p-2 text-pink dark:text-pink-dark">
                   Whispy Woods' Energetic Feast Plate
                 </h3>
                 <div className="flex flex-col sm:flex-row items-center gap-4" >
@@ -106,7 +106,7 @@ function App() {
       </main>
 {/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
       <footer className="bg-cocoa">
-        <div className="min-h-[100px] text-cream flex items-center justify-between flex gap-6 justify-center text-center p-9 flex-col md:flex-row">
+        <div className="min-h-[100px] text-cream flex items-center gap-6 justify-center text-center p-9 flex-col md:flex-row md:grid-cols-3">
           <div>
             <p className="text-lg font-bold text-pink">★ Kirby Café Madrid</p>
             <p className="opacity-85 mt-2">
