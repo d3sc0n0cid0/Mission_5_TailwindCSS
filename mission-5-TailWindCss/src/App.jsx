@@ -19,7 +19,7 @@ function App() {
     }
   return (
     <div>
-      <nav className="flex items-center justify-between p-4 border-b-2 border-cocoa/20 bg-pink shadow dark:bg-pink-dark dark:text-cream dark:border-cocoa">
+      <nav className="flex flex-wrap items-center justify-between p-4 border-b-2 border-cocoa/20 bg-pink shadow dark:bg-pink-dark dark:text-cream dark:border-cocoa">
         <span className="text-xl font-bold"> ★ Kirby caffe ★</span>
         <ul className="flex gap-6">
           <li>
